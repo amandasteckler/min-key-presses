@@ -43,10 +43,24 @@ describe "MinKeyPresses" do
 
   end
 
-  # describe "group letters into arrays" do
-  #   it "puts each key's letters into arrays" do
-  #     expect (typed_long.group_letters_into_keys).to eq()
-  #   end
-  # end
+  describe "group letters into arrays" do
 
+    it "puts each key's letters into arrays from medium-sized string" do
+      expect(typed_medium.group_letters_into_keys).to eq([["m", "e"], ["i", "g"], ["t"], ["s"], ["u"], ["n"], ["r"], ["d"]])
+    end
+
+    it "puts each key's letters into arrays from long-sized string" do
+      expect(typed_long.group_letters_into_keys).to eq([["o", "m", "c", "v"], ["e", "j", "i", "g"], ["r", "x", "q"], ["t", "f", "d"], ["u", "n", "y"], ["h", "w", "z"], ["s", "b", "a"], ["p", "k", "l"]])
+    end
+  end
+
+  describe 'match keys with corresponding letters' do
+    it 'matches number with array of letters from medium-sized string' do
+      expect(typed_medium.optimized_keys).to eq({2=>["m", "e"], 3=>["i", "g"], 4=>["t"], 5=>["s"], 6=>["u"], 7=>["n"], 8=>["r"], 9=>["d"]})
+    end
+
+    it 'matches number with array of letters from long-sized string' do
+      expect(typed_long.optimized_keys).to eq({2=>["o", "m", "c", "v"], 3=>["e", "j", "i", "g"], 4=>["r", "x", "q"], 5=>["t", "f", "d"], 6=>["u", "n", "y"], 7=>["h", "w", "z"], 8=>["s", "b", "a"], 9=>["p", "k", "l"]})
+    end
+  end
 end
