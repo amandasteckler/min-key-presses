@@ -5,7 +5,7 @@ Program that creates a class called MinKeyPresses. By calling the optimized_keys
 Example:
 
 tix = MinKeyPresses.new("Tickets are awesome!")
+
 p tix.optimized_keys
 
-**Output:**
-{2=>["e", "o"], 3=>["a", "w"], 4=>["t", "k"], 5=>["s"], 6=>["c"], 7=>["i"], 8=>["m"], 9=>["r"]}
+**Output:** {2=>["e", "o"], 3=>["a", "w"], 4=>["t", "k"], 5=>["s"], 6=>["c"], 7=>["i"], 8=>["m"], 9=>["r"]}
