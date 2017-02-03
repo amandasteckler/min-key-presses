@@ -1,6 +1,6 @@
 # Minimum Key Presses
 
-Program that creates a class called MinKeyPresses. By calling the optimized_keys function on an instance of the class, it returns a keypad layout optimized for the least amount of key presses needed to type out the instance's passed in string.
+Program that creates a class called MinKeyPresses. By calling the optimized_keys function on an instance of the class, it returns a 2-9 keypad layout optimized for the least amount of key presses needed to type out the instance's passed in string.
 
 Example:
 
